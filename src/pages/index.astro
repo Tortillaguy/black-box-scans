@@ -1,15 +1,60 @@
 ---
+import { SITE_NAME } from "../data";
+import { Icon } from "astro-icon";
+import "../globals.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{SITE_NAME}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body class="max-w-7xl m-auto">
+    <div class="px-4 py-4 flex items-center gap-4">
+      <i class="fa-solid fa-house"></i>
+      <h1 class="text-3xl font-bold">BlackBox Labs</h1>
+    </div>
+    <div class="mt-7 m-auto px-4">
+      <h1 class="text-4xl font-extrabold tracking-tighter">
+        Transform your real estate with Matterport scanning
+      </h1>
+      <p class="text-lg mt-2">
+        Take advantage of Matterport scanning technology and unlock new
+        possibilities in real estate
+      </p>
+      <Icon name="home" />
+      <a
+        class="m-auto block rounded-md bg-blue-500 p-6 text-xl font-bold cursor-pointer w-fit"
+        >Request a Consultation Today <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="px-4 mt-4">
+      <h1 class="text-3xl font-bold tracking-tighter">
+        Create 3D models of your property
+      </h1>
+      <p class="text-lg mt-2">
+        With BlackBox Labs, you can capture the full potential of a property by
+        creating an interactive 3D model with Matterport scanning technology
+      </p>
+      <Icon name="houses" />
+    </div>
+    <div class="px-4 mt-4">
+      <h1 class="text-3xl font-extrabold tracking-tighter">
+        Accurately measure and document your property
+      </h1>
+      <p class="text-lg mt-2">
+        Accurately measure, document, and present your property with detailed 3D
+        measurements and images
+      </p>
+      <Icon name="houses-2" />
+    </div>
+  </body>
 </html>
