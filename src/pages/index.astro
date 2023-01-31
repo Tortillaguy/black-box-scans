@@ -51,13 +51,13 @@ import "../globals.css";
     <div
       class="px-4 md:flex md:flex-row-reverse md:items-center md:gap-10 md:py-8"
     >
-      <div class="w-[50%]">
+      <div class="w-full mb-8 md:md-0 md:w-[50%]">
         <h1 class="text-3xl font-bold tracking-tighter">
           Create 3D models of your property
         </h1>
         <p class="text-lg mt-2">
-          With BlackBox Labs, you can capture the full potential of a property
-          by creating an interactive 3D model with Matterport scanning
+          With BlackBox 3D Scans, you can capture the full potential of a
+          property by creating an interactive 3D model with Matterport scanning
           technology
         </p>
       </div>
@@ -116,6 +116,19 @@ import "../globals.css";
         </p>
       </div>
       <Icon name="houses" />
+    </div>
+
+    <style>
+      .contact-us {
+        @apply text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-[#05d9ff] to-[#88ffb9];
+        -webkit-background-clip: text;
+        text-align: center;
+      }
+    </style>
+    <div class="pb-16">
+      <h1 class="contact-us">
+        <a href="mailto"> Contact Us <br /> at foo@email.com</a>
+      </h1>
     </div>
     <footer></footer>
   </body>
