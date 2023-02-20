@@ -18,10 +18,11 @@ import "../globals.css";
     />
     <style>
       .button-cta {
-        background: #00ffd8;
-        background: linear-gradient(65deg, #00ffd8 30%, #00ff00 80%);
-        background: -webkit-linear-gradient(65deg, #93ffd7 30%, #00ff00 80%);
-        background: -moz-linear-gradient(65deg, #93ffd7 30%, #00ff00 80%);
+        background: #a3cef1;
+        background: linear-gradient(65deg, #38feff 30%, #5ab5ff 80%);
+        background: -webkit-linear-gradient(65deg, #38feff 30%, #5ab5ff 80%);
+        background: -moz-linear-gradient(65deg, #38feff 30%, #5ab5ff 80%);
+        color: #353535;
       }
       .stat-numbers {
         display: flex;
@@ -30,10 +31,10 @@ import "../globals.css";
         align-items: stretch;
         grid-gap: 20px;
         width: 100%;
-        padding-top: 40px;
+        /* padding-top: 40px; */
       }
       .contact-us {
-        @apply text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-[#05d9ff] to-[#88ffb9];
+        @apply font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-[#05d9ff] to-[#018fff];
         -webkit-background-clip: text;
         text-align: center;
       }
@@ -41,18 +42,19 @@ import "../globals.css";
   >
 
   <body
-    class="flex flex-col items-center w-full snap-y snap-proximity scroll-smooth"
+    class="flex flex-col items-center w-full snap-y snap-mandatory scroll-smooth"
   >
     <!-- HEADER -->
     <div class="absolute w-full max-w-5xl">
       <div class="flex items-center gap-4 px-4 py-4">
         <i class="text-2xl fa-solid fa-cube"></i>
-        <h1 class="text-3xl font-bold">BlackBox 3D Scans</h1>
+        <h1 class="text-xl font-bold md:text-3xl">BlackBox 3D Scans</h1>
       </div>
     </div>
     <!-- BODY -->
+
+    <!-- FIRST SECTION -->
     <div class="w-full flex-none h-[100vh] snap-start">
-      <!-- FIRST SECTION -->
       <div
         class="w-full h-full max-w-5xl px-4 pt-16 m-auto md:pt-24 md:flex md:gap-8"
       >
@@ -72,13 +74,13 @@ import "../globals.css";
             ></i>
           </a>
         </div>
-        <Icon name="home" />
+        <Icon class="pt-2" name="home" />
       </div>
     </div>
     <!-- SECOND SECTION -->
     <div class="w-full flex-none h-[100vh] snap-start">
       <div
-        class="flex flex-col items-center w-full h-full max-w-5xl px-4 m-auto md:flex md:flex-row-reverse md:items-center md:gap-10 md:py-8"
+        class="flex flex-col items-center justify-around w-full h-full max-w-5xl px-4 py-4 m-auto md:flex md:flex-row-reverse md:items-center md:gap-10 md:py-8"
       >
         <div class="w-full mb-8 md:md-0 md:w-[50%]">
           <h1 class="text-3xl font-bold tracking-tighter">
@@ -90,10 +92,10 @@ import "../globals.css";
             scanning technology
           </p>
         </div>
-        <div class="w-full">
+        <div class="w-full h-[50%]">
           <iframe
             width="100%"
-            height="380"
+            height="100%"
             src="https://my.matterport.com/show/?m=7w8JcWMMnrk"
             frameborder="0"
             allowfullscreen
@@ -102,11 +104,10 @@ import "../globals.css";
       </div>
     </div>
 
-    <div class="w-full flex-none h-[100vh] snap-start">
-      <div
-        class="flex flex-col items-center justify-around w-full h-full max-w-5xl m-auto"
-      >
-        <div class="max-w-5xl px-5 stat-numbers">
+    <!-- THIRD SECTION -->
+    <div class="flex-none w-full snap-start">
+      <div class="flex flex-col justify-center w-full h-full py-8">
+        <div class="max-w-5xl px-5 m-auto stat-numbers">
           <Statfacts
             title="Increase sales"
             stat="14"
@@ -128,9 +129,11 @@ import "../globals.css";
             subtitle="by eliminating the need for car and plane travel to operate more sustainably"
           />
         </div>
-        <div class="">
-          <h1 class="contact-us">
-            <a href="mailto"> Contact Us <br /> at foo@email.com</a>
+        <div class="w-full max-w-5xl px-10 py-8 m-auto">
+          <h1 class="text-4xl contact-us md:text-5xl">
+            <a href="mailto:foo@email.com">
+              Contact Us <br /> at foo@email.com</a
+            >
           </h1>
         </div>
       </div>
