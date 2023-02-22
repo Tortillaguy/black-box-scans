@@ -39,7 +39,8 @@ import "../globals.css";
         meta: [
           {
             name: "twitter:image",
-            content: "cube_pic.png",
+            content:
+              "https://drive.google.com/uc?id=1nCkuNpJ5jGn22pEBt2NijA_uL6Y6QTK1",
           },
           { name: "twitter:title", content: "Black Box 3D Scans" },
           {
@@ -83,95 +84,101 @@ import "../globals.css";
   >
     <!-- HEADER -->
     <div class="absolute w-full max-w-5xl">
-      <div class="flex items-center gap-4 px-4 py-4">
-        <i class="text-2xl fa-solid fa-cube"></i>
-        <h1 class="text-xl font-bold md:text-3xl">BlackBox 3D Scans</h1>
+      <div class="flex justify-between items-center px-4 py-4">
+        <div class="flex gap-4 items-center">
+          <i class="text-2xl fa-solid fa-cube"></i>
+          <h1 class="text-xl font-bold md:text-3xl">BlackBox 3D Scans</h1>
+        </div>
+        <a href="tel:5122003173" class="contact-us text-2xl tracking-wide">
+          <i class="fa-solid fa-phone"></i>
+          <span class="tracking-tighter">Call Now:</span> (512)200-3173
+        </a>
       </div>
-    </div>
-    <!-- BODY -->
+      <!-- BODY -->
 
-    <!-- FIRST SECTION -->
-    <div class="w-full flex-none h-[100vh] snap-start">
-      <div
-        class="w-full h-full max-w-5xl px-4 pt-16 m-auto md:pt-24 md:flex md:gap-8"
-      >
-        <div class="flex flex-col items-start justify-center">
-          <h1 class="text-2xl font-extrabold tracking-tighter md:text-4xl">
-            Transform your real estate with Matterport scanning
-          </h1>
-          <p class="mt-2 text-md md:text-lg">
-            Take advantage of Matterport scanning technology and unlock new
-            possibilities in real estate
-          </p>
-          <a
-            href="https://calendly.com/blackbox3d"
-            target="_blank"
-            class="my-3 md:my-10 block rounded-xl md:rounded-3xl shadow-lg bg-[#79e297] p-3 md:p-6 text-sm md:text-xl font-bold cursor-pointer w-fit button-cta"
-            >Request a Consultation Today <i class="fa-solid fa-arrow-right"
-            ></i>
-          </a>
-        </div>
-        <Icon class="pt-2" name="home" />
-      </div>
-    </div>
-    <!-- SECOND SECTION -->
-    <div class="w-full flex-none h-[100vh] snap-start">
-      <div
-        class="flex flex-col items-center justify-around w-full h-full max-w-5xl px-4 py-4 m-auto md:flex md:flex-row-reverse md:items-center md:gap-10 md:py-8"
-      >
-        <div class="w-full mb-8 md:md-0 md:w-[50%]">
-          <h1 class="text-3xl font-bold tracking-tighter">
-            Create 3D models of your property
-          </h1>
-          <p class="mt-2 text-lg">
-            With BlackBox 3D Scans, you can capture the full potential of a
-            property by creating an interactive 3D model with Matterport
-            scanning technology
-          </p>
-        </div>
-        <div class="w-full h-[50%] md:h-full">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://my.matterport.com/show/?m=7w8JcWMMnrk"
-            frameborder="0"
-            allowfullscreen
-            allow="xr-spatial-tracking"></iframe>
+      <!-- FIRST SECTION -->
+      <div class="w-full flex-none h-[100vh] snap-start">
+        <div
+          class="w-full h-full max-w-5xl px-4 pt-16 m-auto md:pt-24 md:flex md:gap-8"
+        >
+          <div class="flex flex-col items-start justify-center">
+            <h1 class="text-2xl font-extrabold tracking-tighter md:text-4xl">
+              Transform your real estate with Matterport scanning
+            </h1>
+            <p class="mt-2 text-md md:text-lg">
+              Take advantage of Matterport scanning technology and unlock new
+              possibilities in real estate
+            </p>
+            <a
+              href="https://calendly.com/blackbox3d"
+              target="_blank"
+              class="my-3 md:my-10 block rounded-xl md:rounded-3xl shadow-lg bg-[#79e297] p-3 md:p-6 text-sm md:text-xl font-bold cursor-pointer w-fit button-cta"
+              >Request a Consultation Today <i class="fa-solid fa-arrow-right"
+              ></i>
+            </a>
+          </div>
+          <Icon class="pt-2" name="home" />
         </div>
       </div>
-    </div>
+      <!-- SECOND SECTION -->
+      <div class="w-full flex-none h-[100vh] snap-start">
+        <div
+          class="flex flex-col items-center justify-around w-full h-full max-w-5xl px-4 py-4 m-auto md:flex md:flex-row-reverse md:items-center md:gap-10 md:py-8"
+        >
+          <div class="w-full mb-8 md:md-0 md:w-[50%]">
+            <h1 class="text-3xl font-bold tracking-tighter">
+              Create 3D models of your property
+            </h1>
+            <p class="mt-2 text-lg">
+              With BlackBox 3D Scans, you can capture the full potential of a
+              property by creating an interactive 3D model with Matterport
+              scanning technology
+            </p>
+          </div>
+          <div class="w-full h-[50%] md:h-full">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://my.matterport.com/show/?m=7w8JcWMMnrk"
+              frameborder="0"
+              allowfullscreen
+              allow="xr-spatial-tracking"></iframe>
+          </div>
+        </div>
+      </div>
 
-    <!-- THIRD SECTION -->
-    <div class="flex-none w-full snap-start md:h-[100vh]">
-      <div class="flex flex-col justify-center w-full h-full py-8">
-        <div class="max-w-5xl px-5 m-auto stat-numbers">
-          <Statfacts
-            title="Increase sales"
-            stat="14"
-            subtitle="by inspiring more customers to visit your property"
-          />
-          <Statfacts
-            title="Decrease travel time and cost"
-            stat="50"
-            subtitle="by removing the need for site visits"
-          />
-          <Statfacts
-            title="Work faster"
-            stat="30"
-            subtitle="less time to complete projects when teams can access a property anytime and from anywhere"
-          />
-          <Statfacts
-            title="Reduce carbon emissions"
-            stat="16"
-            subtitle="by eliminating the need for car and plane travel to operate more sustainably"
-          />
-        </div>
-        <div class="w-full max-w-5xl px-10 py-8 m-auto">
-          <h1 class="text-4xl contact-us md:text-5xl">
-            <a href="mailto:erick@blackbox3Dscans.com">
-              Contact us at <br />erick@blackbox3Dscans.com</a
-            >
-          </h1>
+      <!-- THIRD SECTION -->
+      <div class="flex-none w-full snap-start md:h-[100vh]">
+        <div class="flex flex-col justify-center w-full h-full py-8">
+          <div class="max-w-5xl px-5 m-auto stat-numbers">
+            <Statfacts
+              title="Increase sales"
+              stat="14"
+              subtitle="by inspiring more customers to visit your property"
+            />
+            <Statfacts
+              title="Decrease travel time and cost"
+              stat="50"
+              subtitle="by removing the need for site visits"
+            />
+            <Statfacts
+              title="Work faster"
+              stat="30"
+              subtitle="less time to complete projects when teams can access a property anytime and from anywhere"
+            />
+            <Statfacts
+              title="Reduce carbon emissions"
+              stat="16"
+              subtitle="by eliminating the need for car and plane travel to operate more sustainably"
+            />
+          </div>
+          <div class="w-full max-w-5xl px-10 py-8 m-auto">
+            <h1 class="text-4xl contact-us md:text-5xl">
+              <a href="mailto:erick@blackbox3Dscans.com">
+                Contact us at <br />erick@blackbox3Dscans.com</a
+              >
+            </h1>
+          </div>
         </div>
       </div>
     </div>
