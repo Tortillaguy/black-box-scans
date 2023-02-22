@@ -1,6 +1,7 @@
 ---
 import { SITE_NAME } from "../data";
 import { Icon } from "astro-icon";
+import { SEO } from "astro-seo";
 import Statfacts from "../components/statfacts.astro";
 import "../globals.css";
 ---
@@ -12,6 +13,37 @@ import "../globals.css";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{SITE_NAME}</title>
+    <SEO
+      title="Black Box 3D Scans"
+      description="Take advantage of Matterport scanning technology and unlock new possibilities in real estate"
+      openGraph={{
+        image: {
+          url: "/cube_pic.png",
+          alt: "Black Box 3D Scans Logo",
+        },
+        basic: {
+          title: "Black Box 3D Scans",
+          type: "website",
+          image: "/cube_pic.png",
+        },
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: "cube_pic.png",
+          },
+          { name: "twitter:title", content: "Black Box 3D Scans" },
+          {
+            name: "twitter:description",
+            content: "Matterport Scanning Services",
+          },
+        ],
+      }}
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -132,7 +164,7 @@ import "../globals.css";
         <div class="w-full max-w-5xl px-10 py-8 m-auto">
           <h1 class="text-4xl contact-us md:text-5xl">
             <a href="mailto:foo@email.com">
-              Contact Us <br /> at foo@email.com</a
+              Contact us at <br />erick@blackbox3Dscans.com</a
             >
           </h1>
         </div>
