@@ -6,6 +6,5 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: "https://www.blackbox3dscans.com",
-  base: "/",
+  site: "https://blackbox3dscans.com",
 });
