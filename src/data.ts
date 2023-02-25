@@ -1,1 +1,1 @@
-export const SITE_NAME = "Black Box Labs";
+export const SITE_NAME = "Black Box 3D Scans";

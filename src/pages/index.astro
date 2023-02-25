@@ -82,26 +82,32 @@ import "../globals.css";
   <body
     class="flex flex-col items-center w-full snap-y snap-mandatory scroll-smooth"
   >
-    <!-- HEADER -->
-    <div class="absolute w-full max-w-5xl">
-      <div class="flex justify-between items-center px-4 py-4">
-        <div class="flex gap-4 items-center">
-          <i class="text-2xl fa-solid fa-cube"></i>
-          <h1 class="text-xl font-bold md:text-3xl">BlackBox 3D Scans</h1>
-        </div>
-        <a
-          href="tel:5122003173"
-          class="contact-us text-md md:text-2xl tracking-wide"
-        >
-          <i class="fa-solid fa-phone"></i>
-          <span class="tracking-tighter">Call Now:</span> (512)200-3173
-        </a>
-      </div>
+    <div class="w-full max-w-5xl">
+      <!-- HEADER -->
+
       <!-- BODY -->
 
       <!-- FIRST SECTION -->
-      <div class="w-full flex-none h-[90%] md:h-[100svh] snap-start">
-        <div class="w-full h-full max-w-5xl px-4 pt-2 m-auto md:flex md:gap-8">
+      <div class="w-full flex-auto h-[100vsh] snap-start">
+        <div class="flex justify-between items-center px-4 py-4">
+          <div class="flex gap-4 items-center">
+            <i class="text-2xl fa-solid fa-cube"></i>
+            <h1 class="text-xl font-bold md:text-3xl">BlackBox 3D Scans</h1>
+          </div>
+          <div
+            class="flex flex-col items-center bg-white rounded-lg p-2 drop-shadow-lg"
+          >
+            <a
+              href="tel:5122003173"
+              class="contact-us text-md md:text-2xl tracking-wide"
+            >
+              <i class="fa-solid fa-phone"></i>
+              <span class="tracking-tighter">Call Now:<br /></span> (512)200-3173
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full h-full max-w-5xl px-4 py-3 m-auto md:flex md:gap-8">
           <div class="flex flex-col items-start justify-center">
             <h1 class="text-2xl font-extrabold tracking-tighter md:text-4xl">
               Transform your real estate with Matterport scanning
